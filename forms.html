@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body> 
+    <!-- form action="/action.html=>that is we want to sumbit this data it is use for backend purpose 
+    The form itself is not visible. Also note that the default width of an input field is 20 characters.
+    The <label> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element.
+        If the name attribute is omitted, the value of the input field will not be sent at all.
+-->
+    <h3>Submit predefined data </h3>
+    <form action="/action.html">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" value="Manisha"><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="manu@gmail.com"><br>
+        <button type="submit">Submit</button>
+    </form>
+    <!--once you click on submit button form data send to page action.html and get http://127.0.0.1:5500/action.html?username=Manisha&email=manu%40gmail.com output of which is in action.html page .you can render it anywgere you want-->
+    <h3>Submit Enter data in form </h3>
+    <form action="/action.html" target="_blank">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" ><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+        <button type="submit">Submit</button>
+    </form>
+    <form action="/action.html">
+   <h3>name attribute use</h3>
+   <!-- You get this using name attribute http://127.0.0.1:5500/action.html?fname=Manisha on page it will show fname=Manisha-->
+   <label for="fname">Name</label>
+   <input type="text" id="fname" name="fname" value="Manisha"><br>
+   <button type="submit">Submit</button>
+   <h3>Without name attribute use</h3>
+   <!-- You get this using name attribute http://127.0.0.1:5500/action.html?fname=Manisha same url but on page diiff not show anything-->
+   <label for="fname">Name</label>
+   <input type="text" id="fname" value="Manisha"><br>
+   <button type="submit">Submit</button>
+</form>
+</body>
+</html>

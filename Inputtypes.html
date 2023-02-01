@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <label>Empty</label>
+    <input type="" /><br />
+    <label>Text</label>
+    <input type="text" /><br />
+    <label>Email</label>
+    <input type="email" /><br />
+    <label>Password</label>
+    <input type="password" /><br />
+    <label>Phone</label>
+    <input type="tel" /><br />
+    <label>Number</label>
+    <input type="number" /><br />
+    <label>Month</label>
+    <input type="month" /><br />
+    <label>Date</label>
+    <input type="date" /><br />
+    <label>Datetime</label>
+    <input type="datetime-local" /><br />
+    <label>Week</label>
+    <input type="week" /><br />
+    <label>Image</label>
+    <input
+      type="img"
+      src="https://www.foodiesfeed.com/wp-content/uploads/2021/01/fried-egg-and-guacamole-sandwiches.jpg"
+      alt="Image of egg"
+      width="100"
+      hight="100"
+    /><br />
+    <label>Button</label>
+    <input type="button" value="click me" /><br />
+    <!-- input type="button"  but this is not recommended  bcz of accesibility reason instead use the following 
+    in this we cant put anything in between,using button we can decorate this,we can use before and after pseudo code ,<button type="button"> it is semantic element-->
+    <button type="button">Click Here</button>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset form</button><br>
+    <label>Color</label>
+    <input type="color" /><br />
+    <label>URL</label>
+    <input type="url" /><br />
+    <label>Search</label>
+    <input type="search" /><br />
+    <label>Hidden</label>
+    <input type="Hidden" /><br />
+    <label>File</label>
+    <input type="file" /><br />
+    <label>Range</label>
+    <input type="range" /><br />
+    <label>Radio Button</label>
+    <input type="radio" name="gender" />Male
+    <input type="radio" name="gender">Female<br>
+    <!--name attribute is mandentory here, name=gender it is in same group so we can select any one of them name=city it is diff gruop select multiple using this .-->
+    <label>Checkbox</label>
+    <input type="checkbox" /><br />
+    <p>Which game do u want to play?</p>
+    <input type="checkbox" name="game">Chess
+    <input type="checkbox" name="game">Carom
+    <input type="checkbox" name="game">Football
+    <input type="checkbox" name="game">Cricket
+    <input type="checkbox" name="game" checked>Batminton
+    <h3>******************************************************************************</h3>
+    <label for="username">Username</label>
+    <input type="username" id="username"/><br />
+    <!--id and lable for is similar-->
+    <label for="email">Email</label>
+    <input type="email" id="email"/><br /></br>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+
+
+
+
+  </body>
+</html>
