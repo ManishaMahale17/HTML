@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A2-Form</title>
+  </head>
+  <body>
+    <!-- Create a form and need to fulfil the following points
+There should be four input field and a submit button
+Username, email, password and Date of birth(date)
+All four fields should be mandatory
+All fields should have placeholder
+Username should not be exceeded more than 15 characters and should accept at least 6 characters
+Date of Birth field should not accept the date before 31-Dec-2010 and after 31-Dec-2023 -->
+
+    <form autocomplete="off">
+      <h1>Welcome to my page</h1>
+      <h3>Please Sign Up Here!</h3>
+      <br /><br />
+      <label for="username">Username:</label>
+      <input
+        type="text"
+        id="username"
+        placeholder="Enter your Username"
+        required
+        pattern="[a-z]{6,15}"
+      /><br /><br />
+
+      <label for="email">Email: </label>
+      <input
+        type="email"
+        id="email"
+        placeholder="Enter your Email"
+        required
+      /><br /><br />
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        placeholder="Enter password"
+        required
+        pattern="[0-9]{8}"
+      /><br /><br />
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" min="2010-12-31" max="2023-12-31" required />
+      <br /><br /><br />
+
+      <button type="Submit">Sign Up</button>
+    </form>
+  </body>
+</html>
